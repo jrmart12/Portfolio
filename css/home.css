@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=EB+Garamond&family=Rubik&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "EB Garamond", serif;
+  color: rgb(0, 0, 0);
+  padding-left: 3rem;
+  padding-right: 5rem;
+  padding-top: 7rem;
+  box-sizing: border-box;
+}
+.loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -140px 0 0 -55px;
+  width: 100px;
+  height: 100px;
+}
+#loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  background: white;
+  filter: contrast(20);
+}
+#dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
+  transform: translateX(0);
+  animation: dot 2.8s infinite;
+}
+#dots {
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: dots 2.8s infinite;
+}
+#dots span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
+}
+
+@keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.left_navbar {
+  overflow: hidden;
+  width: 40%;
+}
+
+.left_navbar ul li a {
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.left_navbar ul li a:hover {
+  color: #fa453e;
+}
+
+.right_navbar {
+  overflow: hidden;
+  width: 38%;
+  left: 80%;
+}
+
+.right_navbar ul li a {
+  float: right;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.right_navbar ul li a svg:hover {
+  color: #fa453e;
+}
+
+.active {
+  color: #fa453e !important;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
+.header_title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 2em;
+  font-size: 5rem;
+}
