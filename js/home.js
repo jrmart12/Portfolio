@@ -7,3 +7,7 @@ document.onreadystatechange = function () {
     document.querySelector("body").style.visibility = "visible";
   }
 };
+
+window.addEventListener("load", () => {
+  document.querySelector("body").classList.add("loaded");
+});
