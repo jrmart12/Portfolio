@@ -23,14 +23,19 @@
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <label for="navi-toggle" class="navigation__button">
+      <label for="navi-toggle" class="navigation__button fade-in-fwd">
         <span class="navigation__icon">&nbsp;</span>
       </label>
 
-      <div class="navigation__background">&nbsp;</div>
+      <div
+        class="navigation__background fade-in-fwd2"
+        style="position: absolute"
+      >
+        &nbsp;
+      </div>
 
       <nav class="navigation__nav">
-        <ul class="navigation__list">
+        <ul class="navigation__list" style="display: none">
           <li class="navigation__item">
             <a href="#" class="navigation__link">Home</a>
           </li>
@@ -49,7 +54,7 @@
     <header class="fade-in-fwd">
       <nav class="left_navbar">
         <ul>
-          <li><a href="" class="active">home</a></li>
+          <li><a href="" class="active_item">home</a></li>
           <li><a href="">portfolio</a></li>
           <li><a href="">experience</a></li>
           <li><a href="">contact me</a></li>
@@ -129,7 +134,68 @@
         <h1>Software Developer</h1>
         <h1>Based in Honduras</h1>
       </section>
-      <section class="section"></section>
+      <div class="spacer"></div>
+      <div class="intro">
+        <section class="left-section">
+          <div class="bio reveal">
+            <h2>Biography</h2>
+            <p>
+              Work for money and code for love! I'm Jose a Computer Systems
+              Engineer based in Honduras
+            </p>
+          </div>
+          <div class="contact reveal">
+            <h2>Contact</h2>
+            <p>La Ceiba, Honduras</p>
+            <a href="mailto: rodolfojose@live.com">rodolfojose@live.com</a>
+            <a href="tel:50498281588">+504 9828-1588</a>
+          </div>
+          <div class="skills reveal">
+            <h2>Important Skills</h2>
+            <p>Detailed oriented</p>
+            <p>Problem solver</p>
+            <p>Fluent in spanish and english</p>
+            <p>fast learner</p>
+          </div>
+        </section>
+        <section class="middle-section reveal">
+          <img
+            src="../resources/about-me-main-image-layer-2.png"
+            alt=""
+            class="layer1"
+          />
+          <img src="../resources/ilustratrtion.png" alt="" class="picture" />
+          <img
+            src="../resources/about-me-main-image-layer-1.png"
+            alt=""
+            class="layer2"
+          />
+          <img src="../resources/about-me-bubble.png" alt="" class="layer3" />
+        </section>
+        <section class="right-section">
+          <div class="years reveal">
+            <h2>Years of Experience</h2>
+            <p>2</p>
+          </div>
+          <div class="jobs reveal">
+            <h2>clients</h2>
+            <p>4</p>
+          </div>
+          <div class="projects_done reveal">
+            <h2>Projects Done</h2>
+            <p>+ 10</p>
+          </div>
+        </section>
+      </div>
+      <!-- <div class="intro-bottom">
+        <section class="bottom-section">
+          <img src="../resources/codex.png" alt="" />
+          <img src="../resources/linkrease.png" alt="" />
+          <img src="../resources/herounit.svg" alt="" />
+        </section>
+        <div class="spacer-bottom"></div>
+      </div> -->
+      <div class="spacer-bottom"></div>
     </main>
     <footer></footer>
     <script src="../js/home.js"></script>
