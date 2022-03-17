@@ -1,15 +1,24 @@
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.visibility = "hidden";
-    document.querySelector(".loading").style.visibility = "visible";
-  } else {
-    document.querySelector(".loading").style.visibility = "hidden";
-    document.querySelector("body").style.visibility = "visible";
-  }
-};
+// document.onreadystatechange = function () {
+//   if (document.readyState !== "complete") {
+//     document.querySelector("body").style.visibility = "hidden";
+//     document.querySelector(".loading").style.visibility = "visible";
+//   } else {
+//     document.querySelector(".loading").style.visibility = "hidden";
+//     document.querySelector("body").style.visibility = "visible";
+//   }
+// };
 
+let loading = document.querySelector(".loading");
 window.addEventListener("load", () => {
-  document.querySelector("body").classList.add("loaded");
+  //document.querySelector("body").classList.add("loaded");
+  setTimeout(function () {
+    document.querySelector(".loading").style.visibility = "hidden";
+    document.querySelector(".body").style.display = "block";
+    document.querySelector(".body").style.visibility = "visible";
+  }, 3000);
+
+  document.querySelector(".body").style.display = "none";
+  document.querySelector(".loading").style.visibility = "visible";
 });
 
 document.querySelector(".navigation__button").addEventListener("click", () => {

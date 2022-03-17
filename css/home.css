@@ -28,6 +28,11 @@ body {
   padding-top: 7rem;
   box-sizing: border-box;
 }
+
+.body {
+  visibility: hidden;
+}
+
 .loading img {
   position: absolute;
   top: 50%;
