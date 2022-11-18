@@ -543,6 +543,9 @@ header {
     width: 80%;
     height: 350px;
   }
+  .middle-section {
+    height: 500px;
+  }
 
   .spacer {
     display: none;
